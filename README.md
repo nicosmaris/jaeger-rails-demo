@@ -28,6 +28,10 @@ rails s -p 3001
 
 Open your browser in:
 `http://localhost:3000/second_service`
-This runs first service action which pings to a second service that at the end pings back to the first one.
+
+This runs first service action which
+ - make a database query
+ - and pings to a second service
+that service, pings back to the first one.
 
 Now, you should be able to see the traces into Jaeger UI `http://localhost:16686`

@@ -7,6 +7,8 @@ class SecondServiceController < ApplicationController
       faraday.adapter Faraday.default_adapter
     end
 
+    Article.last
+
     render plain: conn.get('/').body
   end
 end
