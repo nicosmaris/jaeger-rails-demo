@@ -2,5 +2,4 @@
 
 require_relative 'config/environment'
 
-use Rack::Tracer
 run Rails.application
