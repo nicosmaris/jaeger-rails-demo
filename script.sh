@@ -1,5 +1,12 @@
 #!/bin/bash -ex
 
+function finish {
+  cat first
+  cat second
+  docker logs jaeger
+}
+trap finish EXIT
+
 echo "RAILS_ENV=$RAILS_ENV"
 cd service-first
 bundle install
@@ -20,8 +27,6 @@ echo 'wait for puma to start...'
 sleep 3
 
 curl -X GET http://127.0.0.1:3000/second_service
-cat first
-cat second
-docker logs jaeger
 grep -v -i error first || grep -v -i error second
+
 
