@@ -11,17 +11,17 @@ install:
 script:
   - cd service-first
   - bundle install
-  - bundle exec rails db:migrate RAILS_ENV=development
+  - RAILS_ENV=development bundle exec rails db:migrate
   - cd ../service-second
   - bundle install
-  - bundle exec rails db:migrate RAILS_ENV=development
+  - RAILS_ENV=development bundle exec rails db:migrate
   - cd ..
   - echo 'wait for gems and migrations to finish...'
   - sleep 3
   - cd service-first
-  - bundle exec rails s >> ../first 2>&1 &
+  - RAILS_ENV=development bundle exec rails s >> ../first 2>&1 &
   - cd ../service-second
-  - bundle exec rails s -p 3001 >> ../second 2>&1 &
+  - RAILS_ENV=development bundle exec rails s -p 3001 >> ../second 2>&1 &
   - cd ..
   - echo 'wait for puma to start...'
   - sleep 3
