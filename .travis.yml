@@ -23,5 +23,5 @@ script:
   - curl -X GET http://localhost:3000/second_service
   - cat first
   - cat second
-  - grep -i error first || grep -i error second
+  - grep -v -i error first || grep -v -i error second
 
