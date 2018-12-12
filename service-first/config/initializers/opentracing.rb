@@ -1,8 +1,14 @@
 require 'jaeger/client'
 require 'opentracing'
 
+jaeger_host='10.71.47.216'
+# for travis in which RAILS_ENV is test
+if Rails.env.test?
+  jaeger_host = 'localhost'
+end
+
 OpenTracing.global_tracer = Jaeger::Client.build(
-  host: '10.71.47.216',
+  host: jaeger_host,
   port: 5775,
   service_name: Rails.application.class.parent_name
 )
