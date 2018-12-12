@@ -1,14 +1,19 @@
+#require 'faraday'
+#require 'faraday/tracer'
+
 class SecondServiceController < ApplicationController
   def index
-    conn = Faraday.new(url: 'http://localhost:3001/') do |faraday|
-      faraday.use Faraday::Tracer, span: current_span
+    # doing an external API call just to track it
+    #conn = Faraday.new(url: 'http://localhost:3001/') do |faraday|
+    #  faraday.use Faraday::Tracer, span: request.env['rack.span']
 
-      faraday.request :url_encoded
-      faraday.adapter Faraday.default_adapter
-    end
+    #  faraday.request :url_encoded
+    #  faraday.adapter Faraday.default_adapter
+    #end
 
+    # doing a DB request just to track it
     Article.last
 
-    render plain: conn.get('/').body
+    render plain: 'OK from first service'
   end
 end

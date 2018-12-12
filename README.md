@@ -1,3 +1,5 @@
+[![TravisCI Build Status](https://travis-ci.org/nicosmaris/jaeger-rails-demo.svg?branch=master)](https://travis-ci.org/nicosmaris/jaeger-rails-demo)
+
 # jaeger-rails-demo
 Demo of Opentracing and Jaeger usage on top of a Ruby on Rails app using opentracing-rails gem
 
