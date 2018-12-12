@@ -22,5 +22,6 @@ sleep 3
 curl -X GET http://localhost:3000/second_service
 cat first
 cat second
+docker logs jaeger
 grep -v -i error first || grep -v -i error second
 

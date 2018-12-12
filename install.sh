@@ -9,6 +9,7 @@ docker run -d \
     -p16686:16686 \
     -p14268:14268 \
     -p9411:9411 \
+    --name jaeger \
     jaegertracing/all-in-one:latest
  
 
