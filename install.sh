@@ -11,11 +11,4 @@ docker run -d \
     -p9411:9411 \
     jaegertracing/all-in-one:latest
  
-cd service-first
-bundle install
-bundle exec rails db:migrate RAILS_ENV=development
-
-cd ../service-second
-bundle install
-bundle exec rails db:migrate RAILS_ENV=development
 

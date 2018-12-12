@@ -9,6 +9,13 @@ install:
   - ./install.sh
 
 script:
+  - cd service-first
+  - bundle install
+  - bundle exec rails db:migrate RAILS_ENV=development
+  - cd ../service-second
+  - bundle install
+  - bundle exec rails db:migrate RAILS_ENV=development
+  - cd ..
   - echo 'wait for gems and migrations to finish...'
   - sleep 3
   - cd service-first
