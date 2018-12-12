@@ -5,10 +5,7 @@ rvm:
 services:
   - docker
 
-cache:
-  directories:
-  - service-first/vendor/bundle
-  - service-second/vendor/bundle
+cache: bundler
 
 install:
   - ./install.sh
