@@ -19,7 +19,7 @@ cd ..
 echo 'wait for puma to start...'
 sleep 3
 
-curl -X GET http://localhost:3000/second_service
+curl -X GET http://127.0.0.1:3000/second_service
 cat first
 cat second
 docker logs jaeger
