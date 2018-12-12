@@ -1,0 +1,19 @@
+language: ruby
+
+services:
+  - docker
+
+install:
+  - ./install.sh
+
+script:
+  - cd service-first
+  - bundle exec rails s >> ../first 2>&1 &
+  - cd ../service-second
+  - bundle exec rails s -p 3001 >> ../second 2>&1 &
+  - cd ..
+  - sleep 3
+  - curl -X GET http://localhost:3000/second_service
+  - cat first
+  - cat second
+
