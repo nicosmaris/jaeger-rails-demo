@@ -2,6 +2,10 @@ language: ruby
 rvm:
   - 2.3.4
 
+dist: trusty
+sudo: required
+group: deprecated-2017Q4
+
 cache: bundler
 
 install:
