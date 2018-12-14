@@ -70,12 +70,12 @@ class FaradayInjectTracingMiddleware
     tracer = OpenTracing.global_tracer
     scope_span_context = tracer.extract(OpenTracing::FORMAT_TEXT_MAP, env)
     tracer.start_active_span(
-      env[:method].to_s + ' ' + env[:url].to_s,
+      env[:method].to_s.upcase + ' ' + env[:url].to_s,
       child_of: scope_span_context,
       tags: {
         'component' => 'rails',
         'span.kind' => 'server',
-        'http.method' => env[:method].to_s,
+        'http.method' => env[:method].to_s.upcase,
         'http.url' => env[:url].to_s
       }
     ) do |scope|

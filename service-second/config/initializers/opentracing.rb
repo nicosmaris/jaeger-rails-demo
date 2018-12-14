@@ -4,7 +4,7 @@ require 'opentracing'
 jaeger_host='10.71.47.216'
 # for travis in which RAILS_ENV is test
 if Rails.env.test?
-  jaeger_host = 'localhost'
+  jaeger_host = '127.0.0.1'
 end
 
 OpenTracing.global_tracer = Jaeger::Client.build(
@@ -70,22 +70,23 @@ class FaradayInjectTracingMiddleware
     tracer = OpenTracing.global_tracer
     scope_span_context = tracer.extract(OpenTracing::FORMAT_TEXT_MAP, env)
     tracer.start_active_span(
-      env[:method] + ' ' + env[:url].to_s,
+      env[:method].to_s.upcase + ' ' + env[:url].to_s,
       child_of: scope_span_context,
       tags: {
         'component' => 'rails',
         'span.kind' => 'server',
-        'http.method' => env[:method],
+        'http.method' => env[:method].to_s.upcase,
         'http.url' => env[:url].to_s
       }
     ) do |scope|
       # TODO: log to sentry "trace id #{scope.span.context.to_trace_id} generated faraday request #{env[:method]} #{env[:url].to_s}"
       tracer.inject(scope.span.context, OpenTracing::FORMAT_TEXT_MAP, env[:request_headers])
-      result = @app.call(request_env).on_complete do |response_env|
+      result = @app.call(env).on_complete do |response_env|
         scope.span.set_tag('http.status_code', response_env.status.to_s) 
       end
     end
     result
   end
 end
+
 
