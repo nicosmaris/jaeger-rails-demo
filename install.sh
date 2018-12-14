@@ -12,4 +12,15 @@ docker run -d \
     --name jaeger \
     jaegertracing/all-in-one:latest
  
+echo "RAILS_ENV=$RAILS_ENV"
+cd service-first
+bundle install
+bundle exec rails db:migrate
+cd ../service-second
+bundle install
+bundle exec rails db:migrate
+cd ..
+echo 'wait for gems and migrations to finish...'
+sleep 3
+
 

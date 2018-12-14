@@ -3,21 +3,11 @@
 function finish {
   cat first
   cat second
-  docker logs jaeger
+  docker logs jaeger || echo 'check http://10.71.47.216:16686/search'
 }
 trap finish EXIT
 
 echo "RAILS_ENV=$RAILS_ENV"
-cd service-first
-bundle install
-bundle exec rails db:migrate
-cd ../service-second
-bundle install
-bundle exec rails db:migrate
-cd ..
-echo 'wait for gems and migrations to finish...'
-sleep 3
-
 cd service-first
 bundle exec rails s >> ../first 2>&1 &
 cd ../service-second

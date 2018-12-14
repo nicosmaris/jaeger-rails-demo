@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+#####
+gem 'rdoc'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
@@ -36,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jaeger-client', '>= 0.6.1'
 gem 'opentracing', '>= 0.4.2'
 
-#gem 'faraday'
+gem 'faraday'
 #gem 'faraday-tracer'
 
 group :development, :test do
