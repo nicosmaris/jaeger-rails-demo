@@ -37,3 +37,7 @@ This runs first service action which
 that service, pings back to the first one.
 
 Now, you should be able to see the traces into Jaeger UI `http://localhost:16686`
+
+# Documentation
+
+If you go to the doc folder and `python -m SimpleHTTPServer`, you will see at localhost:8000 the added classes under config/initializers/opentracing.rb and their usage at service-first/app/controllers/second_service_controller.rb
