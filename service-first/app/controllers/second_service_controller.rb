@@ -12,6 +12,6 @@ class SecondServiceController < ApplicationController
     # doing a DB request just to track it
     Article.last
 
-    render plain: 'OK from first service'
+    render plain: conn.get('/').body
   end
 end
