@@ -17,6 +17,7 @@ echo 'wait for puma to start...'
 sleep 3
 
 curl -X GET http://127.0.0.1:3000/second_service
+curl -X GET http://127.0.0.1:16686/api/traces?service=ServiceFirst | json_pp
 grep -v -i error first || grep -v -i error second
 
 
