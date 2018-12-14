@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>development.log - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+  var index_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/darkfish.js"></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../README_md.html">README</a>
+  
+    <li><a href="../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../config_ru.html">config.ru</a>
+  
+    <li><a href="../log/development_log.html">development.log</a>
+  
+    <li><a href="../package_json.html">package.json</a>
+  
+    <li><a href="../public/404_html.html">404.html</a>
+  
+    <li><a href="../public/422_html.html">422.html</a>
+  
+    <li><a href="../public/500_html.html">500.html</a>
+  
+    <li><a href="../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../public/robots_txt.html">robots</a>
+  
+    <li><a href="../tmp/restart_txt.html">restart</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page log/development.log">
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 17:08:22 +0200</p>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>):</p>
+
+<p>activerecord (5.1.4) lib/active_record/migration.rb:576:in
+`check_pending!&#39; activerecord (5.1.4)
+lib/active_record/migration.rb:553:in `call&#39; actionpack (5.1.4)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.4)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.5.1) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.5.1) lib/web_console/middleware.rb:28:in
+`block in call&#39; web-console (3.5.1) lib/web_console/middleware.rb:18:in
+`catch&#39; web-console (3.5.1) lib/web_console/middleware.rb:18:in
+`call&#39; actionpack (5.1.4)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.4) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.4)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.4)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.4)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.4)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.4)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.3) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.3)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.4)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.4)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.3) lib/rack/sendfile.rb:111:in `call&#39; rack-tracer (0.3.0)
+lib/rack/tracer.rb:44:in `call&#39; railties (5.1.4)
+lib/rails/engine.rb:522:in `call&#39; puma (3.11.2)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.11.2)
+lib/puma/server.rb:624:in `handle_request&#39; puma (3.11.2)
+lib/puma/server.rb:438:in `process_client&#39; puma (3.11.2)
+lib/puma/server.rb:302:in `block in run&#39; puma (3.11.2)
+lib/puma/thread_pool.rb:120:in `block in spawn_thread&#39;</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+[1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE &quot;schema_migrations&quot; (&quot;version&quot; varchar NOT NULL PRIMARY KEY)[0m
+[1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE &quot;ar_internal_metadata&quot; (&quot;key&quot; varchar NOT NULL PRIMARY KEY, &quot;value&quot; varchar, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Migrating to <a href="../CreateArticles.html">CreateArticles</a>
+(20180126100338)</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+[1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE &quot;articles&quot; (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, &quot;title&quot; varchar, &quot;description&quot; text, &quot;created_at&quot; datetime NOT NULL, &quot;updated_at&quot; datetime NOT NULL)[0m
+[1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO &quot;schema_migrations&quot; (&quot;version&quot;) VALUES (?)[0m  [[&quot;version&quot;, &quot;20180126100338&quot;]]
+[1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+[1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  &quot;ar_internal_metadata&quot;.* FROM &quot;ar_internal_metadata&quot; WHERE &quot;ar_internal_metadata&quot;.&quot;key&quot; = ? LIMIT ?[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;LIMIT&quot;, 1]]
+[1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+[1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO &quot;ar_internal_metadata&quot; (&quot;key&quot;, &quot;value&quot;, &quot;created_at&quot;, &quot;updated_at&quot;) VALUES (?, ?, ?, ?)[0m  [[&quot;key&quot;, &quot;environment&quot;], [&quot;value&quot;, &quot;development&quot;], [&quot;created_at&quot;, &quot;2018-12-12 15:08:54.518056&quot;], [&quot;updated_at&quot;, &quot;2018-12-12 15:08:54.518056&quot;]]
+[1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 17:09:03 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:09:03 +0200
+Completed 500 Internal Server Error in 120145ms (ActiveRecord: 0.6ms)</p>
+
+<p>Faraday::TimeoutError (Net::ReadTimeout):</p>
+
+<p>app/controllers/second_service_controller.rb:12:in `index&#39; Processing
+by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as *</p>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:11:03 +0200 Started
+GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:11:03 +0200 Processing by
+<a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as   *</p>
+
+<pre>[1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as *</p>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:11:03 +0200</p>
+
+<pre>[1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as   *</p>
+
+<pre>Rendering text template
+Rendering text template
+[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendered text template (0.0ms)
+Rendering text template
+Rendered text template (0.0ms)
+Rendering text template</pre>
+
+<p>Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 0.6ms)</p>
+
+<pre>Rendered text template (0.0ms)
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 18ms (Views: 5.8ms | ActiveRecord: 1.5ms)</p>
+
+<p>Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.4ms)</p>
+
+<p>Completed 200 OK in 23ms (Views: 10.5ms | ActiveRecord: 0.8ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 17:13:47 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:13:47 +0200
+Completed 500 Internal Server Error in 120116ms (ActiveRecord: 0.9ms)</p>
+
+<p>Faraday::TimeoutError (Net::ReadTimeout):</p>
+
+<p>app/controllers/second_service_controller.rb:12:in `index&#39; Processing
+by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:15:47 +0200 Started
+GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:15:47 +0200 Started GET
+“/ping_pong” for 127.0.0.1 at 2018-12-12 17:15:47 +0200 Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre class="ruby"><span class="ruby-constant">Rendering</span> <span class="ruby-identifier">text</span> <span class="ruby-identifier">template</span>
+</pre>
+
+<p>Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>Rendering text template
+[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendered text template (0.0ms)
+[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.5ms)</p>
+
+<pre>Rendered text template (0.0ms)
+Rendering text template
+Rendering text template</pre>
+
+<p>Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.5ms)</p>
+
+<pre>Rendered text template (0.0ms)
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.4ms)</p>
+
+<p>Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.4ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 17:29:43 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:29:43 +0200
+Completed 500 Internal Server Error in 120148ms (ActiveRecord: 1.0ms)</p>
+
+<p>Faraday::TimeoutError (Net::ReadTimeout):</p>
+
+<p>app/controllers/second_service_controller.rb:12:in `index&#39;
+config/initializers/opentracing.rb:21:in `call&#39;
+config/initializers/opentracing.rb:21:in `call&#39; Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:31:43 +0200
+Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:31:43 +0200
+Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:31:43 +0200
+Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendering text template
+Rendering text template
+Rendering text template
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.3ms)</p>
+
+<p>Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 1.1ms)</p>
+
+<p>Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.4ms)</p>
+
+<p>Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.5ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 17:50:59 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:50:59 +0200
+Completed 500 Internal Server Error in 120140ms (ActiveRecord: 0.6ms)</p>
+
+<p>Faraday::TimeoutError (Net::ReadTimeout):</p>
+
+<p>app/controllers/second_service_controller.rb:12:in `index&#39;
+config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong> Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12
+17:52:59 +0200 Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)</p>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:52:59 +0200 Started
+GET “/ping_pong” for 127.0.0.1 at 2018-12-12 17:52:59 +0200 Processing by
+<a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong> Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord:
+0.5ms)</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms)</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 1.2ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:01:07 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:01:07 +0200
+Completed 500 Internal Server Error in 120135ms (ActiveRecord: 0.7ms)</p>
+
+<p>Faraday::TimeoutError (Net::ReadTimeout):</p>
+
+<p>app/controllers/second_service_controller.rb:12:in `index&#39;
+config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:03:07 +0200 Started
+GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:03:07 +0200 Processing by
+<a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong> Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 21ms (Views: 12.9ms | ActiveRecord: 0.5ms)</p>
+
+<pre>Rendering text template
+Rendered text template (0.0ms)
+Rendering text template</pre>
+
+<p>Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.5ms)</p>
+
+<pre>Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 0.6ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:04:51 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)</p>
+
+<p>NameError (uninitialized constant SecondServiceController::Faraday):</p>
+
+<p>app/controllers/second_service_controller.rb:3:in `index&#39;
+config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:15:45 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)</p>
+
+<p>NameError (uninitialized constant SecondServiceController::Faraday):</p>
+
+<p>app/controllers/second_service_controller.rb:3:in `index&#39;
+config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:18:00 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)</p>
+
+<p>NameError (uninitialized constant Faraday::Tracer):</p>
+
+<p>app/controllers/second_service_controller.rb:4:in `block in index&#39;
+app/controllers/second_service_controller.rb:3:in `index&#39;
+config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:19:14 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:19:14 +0200
+Completed 500 Internal Server Error in 120064ms (ActiveRecord: 0.6ms)</p>
+
+<p>Faraday::TimeoutError (Net::ReadTimeout):</p>
+
+<p>app/controllers/second_service_controller.rb:12:in `index&#39;
+config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong> Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12
+18:21:14 +0200</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:21:14 +0200</p>
+
+<pre>Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.6ms)</p>
+
+<p>Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong> Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendering text template
+Rendered text template (0.0ms)
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 1.2ms)</p>
+
+<p>Completed 200 OK in 18ms (Views: 9.2ms | ActiveRecord: 0.3ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:21:31 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:21:31 +0200
+Completed 500 Internal Server Error in 120124ms (ActiveRecord: 0.6ms)</p>
+
+<p>Faraday::TimeoutError (Net::ReadTimeout):</p>
+
+<p>app/controllers/second_service_controller.rb:15:in `index&#39;
+config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:23:31 +0200 Started
+GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:23:31 +0200 Processing by
+<a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre class="ruby"><span class="ruby-constant">Rendering</span> <span class="ruby-identifier">text</span> <span class="ruby-identifier">template</span>
+</pre>
+
+<p>Started GET “/ping_pong” for 127.0.0.1 at 2018-12-12 18:23:31 +0200
+Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendered text template (0.0ms)</pre>
+
+<p>Processing by <a
+href="../PingPongController.html#method-i-index">PingPongController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template</pre>
+
+<p>Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.6ms)</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.5ms)</p>
+
+<pre>Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.4ms)</p>
+
+<p>Completed 200 OK in 16ms (Views: 2.3ms | ActiveRecord: 1.5ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:25:14 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 17ms (Views: 1.8ms | ActiveRecord: 0.8ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:25:17 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:30:07 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 1.1ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:33:02 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 11ms (Views: 1.8ms | ActiveRecord: 0.7ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:33:05 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.0ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:33:29 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:33:31 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-12-12 18:34:20 +0200 Processing by
+Rails::WelcomeController#index as HTML</p>
+
+<pre>Rendering /home/nmaris/.gem/ruby/2.3.4/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+Rendered /home/nmaris/.gem/ruby/2.3.4/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)</pre>
+
+<p>Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:34:44 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:35:18 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.1ms)</pre>
+
+<p>Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.9ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:35:32 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 0.8ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:37:09 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 15ms (Views: 1.8ms | ActiveRecord: 0.9ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:20:in `block in call&#39;
+config/initializers/opentracing.rb:18:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:37:12 +0200 Processing by
+<a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.1ms)</pre>
+
+<p>Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 2.0ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:20:in `block in call&#39;
+config/initializers/opentracing.rb:18:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:38:54 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 11ms (Views: 1.9ms | ActiveRecord: 0.7ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:20:in `block in call&#39;
+config/initializers/opentracing.rb:18:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:39:38 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 0.8ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:20:in `block in call&#39;
+config/initializers/opentracing.rb:18:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:42:00 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 13ms (Views: 1.9ms | ActiveRecord: 0.8ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:21:in `block in call&#39;
+config/initializers/opentracing.rb:19:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:46:03 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 12ms (Views: 2.1ms | ActiveRecord: 0.7ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:22:in `block in call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:49:18 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 15ms (Views: 3.1ms | ActiveRecord: 1.8ms)</p>
+
+<p>RuntimeError (Tried to close already closed span:
+#&lt;Jaeger::Client::Scope:0x0055bb5a88e4b8
+@span=#&lt;Jaeger::Client::Span:0x0055bb5a88e9b8
+@context=#&lt;Jaeger::Client::SpanContext:0x0055bb5a88eaa8
+@span_id=17173848492276647059, @parent_id=13557496113092684383,
+@trace_id=15169798160926845676, @baggage={}, @flags=1&gt;,
+@operation_name=“my_span”,
+@collector=#&lt;Jaeger::Client::Collector:0x0055bb5a9d0510
+@buffer=#&lt;Jaeger::Client::Collector::Buffer:0x0055bb5a9d04e8
+@buffer=[&lt;Jaeger::Thrift::Span traceIdLow:-3276945912782705940,
+traceIdHigh:0, spanId:-1272895581432904557,
+parentSpanId:-4889247960616867233, operationName:“my_span”, references:[],
+flags:1, startTime:1544633358279715, duration:50794145,
+tags:[&lt;Jaeger::Thrift::Tag key:“sampler.type”, vType:STRING (0),
+vStr:“const”&gt;, &lt;Jaeger::Thrift::Tag key:“sampler.param”, vType:STRING
+(0), vStr:“1”&gt;], <a href="]>“>logs:</a>,
+@mutex=#&lt;Thread::Mutex:0x0055bb5a9d0498&gt;&gt;&gt;,
+@start_time=2018-12-12 18:49:18 +0200, @references=nil,
+@tags=[&lt;Jaeger::Thrift::Tag key:”sampler.type“, vType:STRING (0),
+vStr:”const“&gt;, &lt;Jaeger::Thrift::Tag key:”sampler.param“, vType:STRING
+(0), vStr:”1“&gt;], @logs=[]&gt;,
+@scope_stack=#&lt;Jaeger::Client::ScopeManager::ScopeStack:0x0055bb5a9bf648
+@scope_identifier=:opentracing_IOBSYJFY&gt;, @finish_on_close=true,
+@closed=true&gt;):</p>
+
+<p>config/initializers/opentracing.rb:20:in `call&#39;
+config/initializers/opentracing.rb:22:in `block in call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:50:41 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 12ms (Views: 2.0ms | ActiveRecord: 0.9ms)</p>
+
+<p>NoMethodError (undefined method `[]&#39; for nil:NilClass):</p>
+
+<p>config/initializers/opentracing.rb:22:in `block in call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:56:03 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.2ms)</pre>
+
+<p>Completed 200 OK in 15ms (Views: 5.1ms | ActiveRecord: 0.6ms)</p>
+
+<p>NameError (undefined local variable or method `result&#39; for
+#&lt;TracingMiddleware:0x00563b15e1da10&gt;):</p>
+
+<p>config/initializers/opentracing.rb:26:in `call&#39;
+config/initializers/opentracing.rb:22:in `block in call&#39;
+config/initializers/opentracing.rb:20:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-12 18:56:49 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 15ms (Views: 3.5ms | ActiveRecord: 1.0ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 18:58:50 +0200</p>
+
+<pre>[1m[35m (0.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 12ms (Views: 2.1ms | ActiveRecord: 1.1ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 20:47:36 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.1ms)</pre>
+
+<p>Completed 200 OK in 22ms (Views: 7.6ms | ActiveRecord: 0.9ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 21:50:47 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 11ms (Views: 2.5ms | ActiveRecord: 0.7ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 21:51:52 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 22:15:10 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 22:17:05 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.5ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 22:19:20 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 22:25:59 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 22:27:04 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 22:28:15 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 0.6ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-12 22:33:45 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as <strong>/</strong></p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 10ms (Views: 1.7ms | ActiveRecord: 0.6ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-12-14 15:16:35 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by Rails::WelcomeController#index as HTML</p>
+
+<pre>Rendering /home/nmaris/.gem/ruby/2.3.4/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+Rendered /home/nmaris/.gem/ruby/2.3.4/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)</pre>
+
+<p>Completed 200 OK in 17ms (Views: 6.4ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 15:16:39 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.1ms)</pre>
+
+<p>Completed 200 OK in 21ms (Views: 3.0ms | ActiveRecord: 3.2ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 15:20:51 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 16ms (Views: 2.3ms | ActiveRecord: 0.7ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 15:21:02 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 15:25:54 +0200</p>
+
+<pre>[1m[35m (0.2ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 18ms (Views: 2.3ms | ActiveRecord: 1.0ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 15:54:05 +0200</p>
+
+<pre>[1m[35m (0.4ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>LoadError (cannot load such file – faraday):</p>
+
+<p>app/controllers/second_service_controller.rb:1:in `&lt;top
+(required)&gt;&#39; config/initializers/opentracing.rb:43:in `block in
+call&#39; config/initializers/opentracing.rb:31:in `call&#39;
+config/initializers/opentracing.rb:43:in `block in call&#39;
+config/initializers/opentracing.rb:31:in `call&#39; Started GET
+“/second_service” for 127.0.0.1 at 2018-12-14 15:54:39 +0200</p>
+
+<pre>[1m[35m (0.5ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 42ms (Views: 2.8ms | ActiveRecord: 1.1ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 16:02:44 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 19ms (Views: 2.2ms | ActiveRecord: 1.7ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 16:02:53 +0200
+Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 17:02:40 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.1ms)</pre>
+
+<p>Completed 200 OK in 21ms (Views: 2.3ms | ActiveRecord: 1.3ms)</p>
+
+<p>Started GET “/second_service” for 127.0.0.1 at 2018-12-14 17:17:55 +0200</p>
+
+<pre>[1m[35m (0.1ms)[0m  [1m[34mSELECT &quot;schema_migrations&quot;.&quot;version&quot; FROM &quot;schema_migrations&quot; ORDER BY &quot;schema_migrations&quot;.&quot;version&quot; ASC[0m</pre>
+
+<p>Processing by <a
+href="../SecondServiceController.html#method-i-index">SecondServiceController#index</a>
+as HTML</p>
+
+<pre>[1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  &quot;articles&quot;.* FROM &quot;articles&quot; ORDER BY &quot;articles&quot;.&quot;id&quot; DESC LIMIT ?[0m  [[&quot;LIMIT&quot;, 1]]
+Rendering text template
+Rendered text template (0.0ms)</pre>
+
+<p>Completed 200 OK in 17ms (Views: 2.3ms | ActiveRecord: 0.9ms)</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.4.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
