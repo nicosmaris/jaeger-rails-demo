@@ -1,5 +1,3 @@
-require 'faraday'
-
 
 class SecondServiceController < ApplicationController
   def index
