@@ -16,7 +16,7 @@ cd ..
 echo 'wait for puma to start...'
 sleep 6
 
-curl -f -X GET http://127.0.0.1:3000/second_service
+curl -f -H "jaeger-debug-id: some-correlation-id" -X GET http://127.0.0.1:3000/second_service
 sleep 6
 curl -f -X GET http://127.0.0.1:16686/api/services | json_pp
 curl -f -X GET http://127.0.0.1:16686/api/traces?service=ServiceFirst | json_pp

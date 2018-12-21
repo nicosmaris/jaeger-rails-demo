@@ -46,3 +46,7 @@ Check the file .travis.yml
 # Documentation
 
 If you go to the doc folder and `python -m SimpleHTTPServer`, you will see at localhost:8000 the added classes under config/initializers/opentracing.rb and their usage at service-first/app/controllers/second_service_controller.rb
+
+## Blacklist
+
+We do not plan to support faraday

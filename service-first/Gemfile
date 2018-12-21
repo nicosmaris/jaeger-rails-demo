@@ -38,9 +38,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'jaeger-client', '>= 0.6.1'
 gem 'opentracing', '>= 0.4.2'
 
-gem 'faraday'
-#gem 'faraday-tracer'
-
 group :development, :test do
   gem 'pry-byebug'
   # Adds support for Capybara system testing and selenium driver
