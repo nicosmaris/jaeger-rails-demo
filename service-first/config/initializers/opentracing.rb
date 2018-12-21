@@ -15,7 +15,7 @@ logger.level = Logger::DEBUG
 OpenTracing.global_tracer = Jaeger::Client.build(
   host: jaeger_host,
   port: 5775,
-  service_name: Rails.application.class.parent_name,
+  service_name: 'complete-service',
   logger: Rails.logger
 )
 #################################################
@@ -40,7 +40,7 @@ class RackExtractTracingMiddleware
       env["REQUEST_METHOD"] + ' ' + env["rack.url_scheme"] + '://' + env["HTTP_HOST"] + env["REQUEST_URI"],
       child_of: scope_span_context,
       tags: {
-        'component' => 'rails',
+        'component' => 'first',
         'span.kind' => 'server',
         'http.method' => env["REQUEST_METHOD"],
         'http.url' => env["rack.url_scheme"] + '://' + env["HTTP_HOST"] + env["REQUEST_URI"]
@@ -79,7 +79,7 @@ class FaradayInjectTracingMiddleware
       env[:method].to_s.upcase + ' ' + env[:url].to_s,
       child_of: scope_span_context,
       tags: {
-        'component' => 'rails',
+        'component' => 'first',
         'span.kind' => 'server',
         'http.method' => env[:method].to_s.upcase,
         'http.url' => env[:url].to_s
@@ -97,6 +97,12 @@ end
 
 #################################################
 
+##
+# Format: OpenTracing::FORMAT_TEXT_MAP
+# input: OpenTracing.active_span
+# output: -
+
+
 class DBTracingMiddleware
   def call(name, started, finished, unique_id, payload)
     statement = payload.fetch(:sql)
@@ -106,11 +112,11 @@ class DBTracingMiddleware
 
     tracer = OpenTracing.global_tracer
     span = tracer.start_span(
-      'sql.query',
+      statement,
       child_of: OpenTracing.active_span,
       start_time: Time.now,
       tags: {
-        'component' => 'ActiveRecord',
+        'component' => 'first',
         'span.kind' => 'client',
         'db.user' => connection_config.fetch(:username, 'unknown'),
         'db.instance' => connection_config.fetch(:database),
