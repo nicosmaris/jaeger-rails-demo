@@ -3,14 +3,27 @@
 # jaeger-rails-demo
 Demo of Opentracing and Jaeger usage on top of a Ruby on Rails app using opentracing-rails gem
 
-## Environment
+This is not for use in production.
+
+## Development
 
 ```bash
-docker run -d -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 -p5775:5775/udp -p6831:6831/udp -p6832:6832/udp \
-   -p5778:5778 -p16686:16686 -p14268:14268 -p9411:9411 jaegertracing/all-in-one:latest
+docker run \
+    -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 \
+    -p5775:5775/udp \
+    -p6831:6831/udp \
+    -p6832:6832/udp \
+    -p5778:5778 \
+    -p16686:16686 \
+    -p14268:14268 \
+    -p9411:9411 \
+    --name jaeger \
+    jaegertracing/all-in-one:latest --log-level debug
+# continue in another terminal
 cd service-first/
 rails s
-cd service-second/
+# continue in another terminal
+cd ../service-second/
 rails s -p 3001
 ```
 
@@ -25,6 +38,10 @@ This runs first service action which
 that service, pings back to the first one.
 
 Now, you should be able to see the traces into Jaeger UI `http://localhost:16686`
+
+## Deployment
+
+Check the file .travis.yml
 
 # Documentation
 
