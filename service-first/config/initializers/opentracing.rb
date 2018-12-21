@@ -1,6 +1,5 @@
 require 'jaeger/client'
 require 'opentracing'
-require 'pry'
 
 require 'logger'
 
