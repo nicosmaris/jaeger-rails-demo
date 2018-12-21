@@ -90,4 +90,37 @@ class FaradayInjectTracingMiddleware
   end
 end
 
+#################################################
+
+class DBTracingMiddleware
+  def call(name, started, finished, unique_id, payload)
+    statement = payload.fetch(:sql)
+    connection_id = payload.fetch(:connection_id, 'unknown')
+    cached = payload.fetch(:cached, false)
+    connection_config = ActiveRecord::Base.connection_config
+
+    tracer = OpenTracing.global_tracer
+    span = tracer.start_span(
+      'sql.query',
+      child_of: OpenTracing.active_span,
+      start_time: Time.now,
+      tags: {
+        'component' => 'ActiveRecord',
+        'span.kind' => 'client',
+        'db.user' => connection_config.fetch(:username, 'unknown'),
+        'db.instance' => connection_config.fetch(:database),
+        'db.vendor' => connection_config.fetch(:adapter),
+        'db.connection_id' => connection_id,
+        'db.cached' => cached,
+        'db.statement' => statement,
+        'db.type' => 'sql'
+      }
+    )
+    #do |scope|
+    #end
+    span.finish
+  end
+end
+
+ActiveSupport::Notifications.subscribe('sql.active_record', DBTracingMiddleware.new)
 
