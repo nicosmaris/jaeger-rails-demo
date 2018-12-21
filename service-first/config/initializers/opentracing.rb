@@ -16,7 +16,7 @@ OpenTracing.global_tracer = Jaeger::Client.build(
   host: jaeger_host,
   port: 5775,
   service_name: Rails.application.class.parent_name,
-  logger: logger
+  logger: Rails.logger
 )
 #################################################
 

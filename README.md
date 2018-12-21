@@ -5,24 +5,12 @@ Demo of Opentracing and Jaeger usage on top of a Ruby on Rails app using opentra
 
 ## Environment
 
-Prepare Jaeger environment:
-
 ```bash
 docker run -d -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 -p5775:5775/udp -p6831:6831/udp -p6832:6832/udp \
    -p5778:5778 -p16686:16686 -p14268:14268 -p9411:9411 jaegertracing/all-in-one:latest
-```
-
-Prepare first service:
-
-```bash
 cd service-first/
 rails s
-```
-
-Prepare second service:
-
-```bash
-cd service-first/
+cd service-second/
 rails s -p 3001
 ```
 

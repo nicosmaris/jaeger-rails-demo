@@ -10,7 +10,7 @@ docker run -d \
     -p14268:14268 \
     -p9411:9411 \
     --name jaeger \
-    jaegertracing/all-in-one:latest
+    jaegertracing/all-in-one:latest --log-level debug
  
 echo "RAILS_ENV=$RAILS_ENV"
 cd service-first
