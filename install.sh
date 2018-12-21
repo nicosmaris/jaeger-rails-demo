@@ -21,6 +21,6 @@ bundle install
 bundle exec rails db:migrate
 cd ..
 echo 'wait for gems and migrations to finish...'
-sleep 3
+sleep 6
 
 
