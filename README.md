@@ -1,9 +1,12 @@
 [![TravisCI Build Status](https://travis-ci.org/nicosmaris/jaeger-rails-demo.svg?branch=master)](https://travis-ci.org/nicosmaris/jaeger-rails-demo)
 
 # jaeger-rails-demo
-Demo of Opentracing and Jaeger usage on top of a Ruby on Rails app using opentracing-rails gem
 
-This is not for use in production.
+Demo of Opentracing and Jaeger usage on top of a Ruby on Rails app using opentracing-rails gem based on the following files:
+```
+service-first/app/controllers/second_service_controller.rb
+service-first/config/initializers/opentracing.rb
+```
 
 ## Development
 
@@ -31,11 +34,6 @@ rails s -p 3001
 
 Open your browser in:
 `http://localhost:3000/second_service`
-
-This runs first service action which
- - make a database query
- - and pings to a second service
-that service, pings back to the first one.
 
 Now, you should be able to see the traces into Jaeger UI `http://localhost:16686`
 
