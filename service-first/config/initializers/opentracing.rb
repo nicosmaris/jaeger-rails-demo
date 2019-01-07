@@ -1,6 +1,5 @@
 require 'jaeger/client'
 require 'opentracing'
-
 require 'logger'
 
 jaeger_host='10.71.47.216'
@@ -13,7 +12,7 @@ OpenTracing.global_tracer = Jaeger::Client.build(
   host: jaeger_host,
   port: 5775,
   service_name: 'CompleteService',
-  logger: Rails.logger
+  reporter: Jaeger::Reporters::LoggingReporter.new
 )
 #################################################
 
@@ -84,6 +83,7 @@ class DBTracingMiddleware
     #do |scope|
     #end
     span.finish
+    # binding.pry
   end
 end
 
