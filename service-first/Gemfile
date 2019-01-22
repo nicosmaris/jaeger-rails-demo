@@ -16,7 +16,7 @@ gem 'stackprof'
 #####
 gem 'rdoc'
 # https://gitlab.crypteianetworks.prv/crypteia-networks/smas_poc/blob/sky-production/Gemfile
-gem 'sidekiq', "~> 4.2.10"
+#gem 'sidekiq', "~> 4.2.10"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
