@@ -83,7 +83,6 @@ class DBTracingMiddleware
     #do |scope|
     #end
     span.finish
-    # binding.pry
   end
 end
 

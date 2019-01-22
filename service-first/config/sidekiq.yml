@@ -1,0 +1,13 @@
+---
+:concurrency: 10
+:queues:
+  - [smas_emails, 1]
+  - [smas_aggs, 1]
+  - [smas_dmtr_aggs, 1]
+  - [smas_alerts, 1]
+development:
+  :concurrency: 1
+staging:
+  :concurrency: 10
+production:
+  :concurrency: 3

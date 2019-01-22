@@ -6,7 +6,17 @@ git_source(:github) do |repo_name|
 end
 
 #####
+# initialize after all other gems
+gem 'rack-mini-profiler', require: false
+# For memory profiling
+gem 'memory_profiler'
+# For call-stack profiling flamegraphs
+gem 'flamegraph'
+gem 'stackprof'
+#####
 gem 'rdoc'
+# https://gitlab.crypteianetworks.prv/crypteia-networks/smas_poc/blob/sky-production/Gemfile
+gem 'sidekiq', "~> 4.2.10"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
